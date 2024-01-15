@@ -10,15 +10,17 @@ const GameBoard = (function () {
         cell.classList.add('cell');
         cell.addEventListener('click', () => handleCellClick(i));
         cell.classList.add(
-            'w-96',
-            'h-96',
+            'w-[100px]',
+            'h-[100px]',
             'text-3xl',
             'flex',
             'items-center',
             'justify-center',
-            'border-1',
+            'shadow-md', 
+            'border-2',
             'border-gray-800',
-            'cursor-pointer'
+            'cursor-pointer',
+            'hover:bg-gray-400'
         )
         board.appendChild(cell);
         cells.push(cell);
